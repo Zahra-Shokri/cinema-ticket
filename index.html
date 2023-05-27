@@ -3,7 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>سينما تيكت بزرگترين مرجع فروش بلي سينما</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+
+  <script src="../js/jquery-2.2.4.js"></script>
+
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/w3.css"/>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="../css/Font-Awesome-fa-4/css/font-awesome.css">
+
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,6 +47,829 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+
+  <a id="button" style="text-decoration: none;"></a>
+  
+    <!-- First Navbar -->
+    <div class="firstnav">
+      <a href="../pages/home.html" style="margin-right: 25px;">صفحه اول</a>
+      <a href="../pages/groupSell.html">خرید گروهی</a>
+      <a href="../pages/discountThetear.html">سینما تخفیف</a>
+      <a href="#newss">اخبار</a>
+      <a class="active" href="#market">بازارچه</a>
+      <a href="../pages/feature.html">برنامه آینده</a>
+      <a href="#download">دانلود</a>
+      <a href="../pages/contactUs.html">تماس با ما</a>
+  
+      <span style="text-align: left">
+        <a class="firstnav-app" style="margin-left: 25px;">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a class="firstnav-app">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a class="firstnav-app">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="firstnav-app">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a class="firstnav-app">
+          <i class="fa fa-paper-plane" style="font-size: 16px;"></i>
+        </a>
+      </span>
+      <a id="date">
+        <script src="../js/persionCalender.js"></script>
+      </a>
+    </div>
+  
+  
+    <!-- Second Navbar -->
+    <div class="secnav" id="fixed-nav">
+      <a href="../pages/home.html"><img id="img-sitelogo" src="../img/cinemaTicketLogo.svg"></a>
+      <a href="../pages/films.html">فیلم‌ها</a>
+      <a href="../pages/artAndExperience.html">هنر و تجربه</a>
+      <a href="../pages/comedyTheater.html">تئاتر کمدی</a>
+      <a href="../pages/childTheater.html">تئاتر کودک</a>
+      <a href="../pages/fun.html">تفریحی</a>
+      <a href="../pages/sellTable.html">جدول فروش</a>
+      <a href="../pages/trackOrder.html" style="color: #343542">
+        <span id="btn-track-order">پیگیری خرید</span>
+      </a>
+      <a style="background-color: #2d2d39;margin-top: 0;" id="secnavbar-searchbox">
+          <i class="fa fa-search" style="padding: 7px 12px;font-size: medium;"></i>
+          <input type="text" name="search" class="input-txt-search" placeholder="جستجو...">
+      </a>
+  
+      <a href=""><span class="register">عضویت</span></a>
+      <a id="pipeline">|</a>
+      <a href=""><span class="login">ورود</span></a>
+  
+      <a>
+        <span class="all-btn btn-films">فیلم‌ها<i class="fa fa-video-camera" style="padding-right: 5px;font-size: medium;"></i></span>
+      </a>
+      <a>
+        <span class="all-btn btn-choice-cinema">انتخاب سینما<i class="fa fa-map-marker" style="padding-right: 5px;font-size: medium;"></i></span>
+      </a>
+    </div>
+  
+  
+    <!-- Slide Show -->
+  <!--<div class="container" style="width: 100%;position: absolute; ">
+    <div class="row">
+      <div class="col-sm-2" style="background-color: rgba(0,0,0,.65);height: 255px;"></div>
+      <div class="col-sm-8">-->
+          <img class="mySlides w3-animate-fading" src="../img/slidShow/allNightLong.jpg" style="width:100%;height: 250px;">
+          <img class="mySlides w3-animate-fading" src="../img/slidShow/bladeAndCashmere.jpg" style="width:100%;height: 250px;">
+          <img class="mySlides w3-animate-fading" src="../img/slidShow/fourtySeven.jpg" style="width:100%;height: 250px;">
+          <img class="mySlides w3-animate-fading" src="../img/slidShow/newMoonGuestHouse.jpg" style="width:100%;height: 250px;">
+          <img class="mySlides w3-animate-fading" src="../img/slidShow/slaughterHouse.jpg" style="width:100%;height: 250px;">
+          <button class="w3-button w3-display-left" onclick="plusDivs(-1, 0)" style="font-size: 40px;color: black;background-color: unset;">&#10095;</button>
+          <button class="w3-button w3-display-right" onclick="plusDivs(1, 0)" style="font-size: 40px;color: black;background-color: unset;">&#10094;</button>
+      <!--</div>-->
+      <!--<div class="col-sm-2" style="background-color: rgba(0,0,0,.65);height: 255px;"></div>-->
+  
+  
+    <!-- Combo Box -->
+  <div style="position: relative;">
+    <div class="panel-combo">
+      <span class="all-btn btn-fast-buy">خرید سریع</span>
+  
+      <div class="center">
+        <select name="time" class="custom-select sources" placeholder="سانس...">
+          <option value="10">10:00</option>
+          <option value="11">11:00</option>
+          <option value="12">12:00</option>
+          <option value="13">13:00</option>
+          <option value="14">14:00</option>
+          <option value="15">15:00</option>
+          <option value="16">16:00</option>
+          <option value="17">17:00</option>
+          <option value="18">18:00</option>
+          <option value="19">19:00</option>
+          <option value="20">20:00</option>
+          <option value="21">21:00</option>
+          <option value="22">22:00</option>
+          <option value="23">23:00</option>
+        </select>
+      </div>
+  
+      <div class="center" style="left: 48%;">
+        <select name="date" class="custom-select sources" placeholder="تاریخ...">
+          <option value="fri">پنج شنبه 12 تیر</option>
+          <option value="fri">جمعه 13 تیر</option>
+          <option value="sat">شنبه 14 تیر</option>
+          <option value="sun">یک شنبه 15 تیر</option>
+          <option value="mon">دو شنبه 16 تیر</option>
+          <option value="tue">سه شنبه 17 تیر</option>
+          <option value="wed">چهارشنبه 18 تیر</option>
+          <option value="thu">پنج شنبه 19 تیر</option>
+        </select>
+      </div>
+  
+      <div class="center" style="left: 63%;">
+        <select name="date" class="custom-select sources" placeholder="فیلم، تئاتر...">
+          <option value="butterflyStroke">شنای پروانه</option>
+          <option value="aLoverIsInTrouble">عاشقی دردسر داره</option>
+          <option value="motreb">مطرب</option>
+          <option value="onceUponA_TimeInAntalya">روزی روزگاری در آنتالیا</option>
+          <option value="toyStory4">انیمیشن داستان اسباب بازی 4 (دوبله همزمان)</option>
+          <option value="toFall">کله پا</option>
+          <option value="theCryUnderTheGround">فریاد زیر خاک</option>
+          <option value="sixAndThreeHundredMeters">متری شیش و سیصد</option>
+          <option value="prisonBreak">فرار از زندان</option>
+          <option value="happyHour">ساعت خوش</option>
+          <option value="Conflict">گاوبندی</option>
+          <option value="myShareOfLove">سهم من از عاشقی</option>
+          <option value="ridiculousCourtship">خواستگاری های درپیت</option>
+        </select>
+      </div>
+  
+      <div class="center" style="left: 78%;">
+        <select name="date" class="custom-select sources" placeholder="سینما، سالن...">
+          <option value="korush">پردیس سینمایی کوروش</option>
+          <option value="azadi">پردیس سینما آزادی</option>
+          <option value="iranMall">پردیس سینمایی ایران مال</option>
+          <option value="mashhadHoveizeh">پردیس سینمایی هویزه مشهد</option>
+          <option value="bookGarden">پردیس سینمایی باغ کتاب</option>
+          <option value="mellat">پردیس سینمایی ملت</option>
+          <option value="megaMall">پردیس سینمایی مگامال</option>
+          <option value="chaharSoo">پردیس سینمایی چهارسو</option>
+          <option value="mashhadAtlas">پردیس سینمایی اطلس مشهد</option>
+          <option value="farhang">سینما فرهنگ تهران</option>
+          <option value="saheleEsfahan">پردیس سینمایی ساحل اصفهان</option>
+          <option value="Zendegi">پردیس سینمایی زندگی</option>
+          <option value="cinemaMuseum">موزه سینما</option>
+          <option value="heraviCenter">پردیس سینمایی هروی سنتر</option>
+          <option value="mashhadTourist">پردیس ویلاژ توریست مشهد</option>
+          <option value="shomalEksin">پردیس سینمایی اکسین شمال</option>
+          <option value="karajEcomall">پردیس اکومال کرج</option>
+        </select>
+      </div>
+    </div>
+  
+  
+    <!-- Content -->
+    <div class="container-fluid" style="background-color: #f2f3f5;">
+      <div class="row">
+        <div class="col-sm-8">
+  
+          <!-- First Banner -->
+          <img src="../img/tiketKoronaBanner.jpg" class="img-banner-home" style="margin-top: 30px;">
+          <div style="margin-top: 20px;">
+            <i class="fa fa-video-camera" style="font-size: 20px;margin-right: 10px;margin-left: 5px;"></i>
+            <span style="font-size: 24px;color: #69697d;margin-bottom: 15px;">آخرین فیلم‌های روز سینمای ایران</span>
+  
+            <a class="all-btn btn-more-film" href="../pages/films.html">
+              فیلم‌های بیشتر<i class="fa fa-chevron-left" style="margin-top: 6px;margin-right: 4px;font-size: small;"></i>
+            </a>
+  
+            <div style="color: #9299a6;font-size: 19px;margin-right: 10px;margin-top: 10px;">این هفته به سینما بروید و فیلم های جدید را ببینید.</div>
+          </div>
+  
+          <!-- Movie -->
+          <!-- First Movie Row -->
+          <div class="row row2" style="width: 115%;margin-top: 10px;margin-right: 8px;">
+            <a href="../pages/movie/butterflyStroke.html"><div class="column">
+              <span class="age-range">15+</span>
+              <img src="../img/Movies/butterflyStroke.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name" >شنای پروانه</div>
+            </div></a>
+  
+            <div class="column">
+              <img src="../img/Movies/khobBadJelf2.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">خوب، بد، جلف <span style="font-family: 'BRoya';">2</span></div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/hotSgent.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">عطر داغ</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/iForgotToForgetYou.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">یادم تو را فراموش</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/theWorldDancesWithMe.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">جهان با من برقص!</div>
+            </div>
+          </div>
+  
+          <!-- Second Movie Row -->
+          <div class="row row2" style="width: 115%;margin-top: 20px;margin-right: 8px;">
+            <div class="column">
+              <span class="age-range">15+</span>
+              <img src="../img/Movies/fourtySeven2.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name" >چهل و هفت</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/theTrainThatNight.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">قطار آن شب</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/bladeAndCashmere.jpeg" class="all-img-movie">
+  
+              <div class="txt-movie-name">تیغ و ترمه</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/slaughterHouse2.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">کشتارگاه</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/allNightLong2.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">سراسر شب</div>
+            </div>
+          </div>
+  
+          <!-- Third Movie Row -->
+          <div class="row row2" style="width: 115%;margin-top: 20px;margin-right: 8px;">
+            <div class="column">
+              <img src="../img/Movies/newMoonGuestHouse2.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name" >مهمان خانه ماه نو</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/Movies/drunkNarges.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">نرگس مست</div>
+            </div>
+          </div>
+  
+  
+  
+          <!-- Second Banner -->
+          <div style="margin-top: 40px;"></div>
+          <img src="../img/theBestDiscountOnTheMarket.jpg" class="img-banner-home">
+          <div style="margin-top: 30px;">
+            <i class="fa fa-film" style="font-size: 20px;margin-right: 10px;margin-left: 5px;"></i>
+            <span style="font-size: 24px;color: #69697d;margin-bottom: 15px;">هنر و تجربه</span>
+  
+            <span class="all-btn btn-more-film">
+              فیلم‌های بیشتر<i class="fa fa-chevron-left" style="margin-top: 6px;margin-right: 4px;font-size: small;"></i>
+            </span>
+            <br>
+  
+            <div style="color: #9299a6;font-size: 19px;margin-right: 10px;margin-top: 10px;">این هفته به سینما بروید و فیلم های جدید را ببینید.</div>
+          </div>
+  
+          <!-- Art & Experience -->
+          <div class="row row2" style="width: 115%;margin-top: 10px;margin-right: 8px;z-index: unset;">
+            <div class="column">
+              <img src="../img/artAndExperience/scenesFromA_Separation.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name" >صحنه هایی از یک جدایی</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/artAndExperience/thereIsNoPlaceForAnAngel.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">جایی برای فرشته ها نیست</div>
+            </div>
+  
+            <div class="column">
+              <img src="../img/artAndExperience/yalda.jpg" class="all-img-movie">
+  
+              <div class="txt-movie-name">یلدای کوتاه</div>
+            </div>
+          </div>
+  
+  
+  
+          <!-- Third Banner --><!-- Third Banner -->
+          <div style="margin-top: 50px;"></div>
+          <img src="../img/Gifts/bannerSlider.gif" class="img-banner-home">
+          <div style="margin-top: 30px;">
+            <i class="fa fa-smile-o" style="font-size: 20px;margin-right: 10px;margin-left: 5px;"></i>
+            <span style="font-size: 24px;color: #69697d;margin-bottom: 15px;">تئاترهای کمدی</span>
+  
+            <span class="all-btn btn-more-film">
+              تئاترهای بیشتر<i class="fa fa-chevron-left" style="margin-top: 6px;margin-right: 10px;font-size: small;"></i>
+            </span>
+            <br>
+  
+            <div style="color: #9299a6;font-size: 19px;margin-right: 10px;margin-top: 10px;">تئاترهای کمدی و خنده دار را ببینید.</div>
+          </div>
+  
+          <!-- Theater -->
+          <!-- First Theater Row -->
+          <div class="row row2" style="width: 115%;margin-top: 10px;margin-right: 8px;z-index: unset;">
+            <div class="column column-theater">
+              <img src="../img/Theater/theCryUnderTheGround.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name" >فریاد زیر خاک</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/mesterMim.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">تئاتر کمدی آقای میم</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/onceUponA_TimeInAntalya.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">روزی روزگاری در آنتالیا</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/aboutLeili.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name" >درباره لیلی</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/moeeinShow4.jpeg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name"> معین شو <span style="font-family: 'BRoya';">4</span></div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/prisonBreak.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name" >فرار از زندان</div>
+            </div>
+          </div>
+  
+          <!-- Second Theater Row -->
+          <div class="row row2" style="width: 115%;margin: 30px 8px 70px 0;z-index: unset;">
+            <div class="column column-theater">
+              <img src="../img/Theater/loveBeat.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">ضربان عشق</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/pasha1400.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">نمایش کمدی پاشا <span style="font-family: 'BRoya';">1400</span></div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/happyHour.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">ساعت خوش</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/aLoverIsInTrouble.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">عاشقی دردسر داره</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/sixAndThreeHundredMeters.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">متری شیش و سیصد</div>
+            </div>
+  
+            <div class="column column-theater">
+              <img src="../img/Theater/superstar.jpg" class="all-img-movie movie-theater">
+  
+              <div class="txt-movie-name">سوپراستار</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-4 colum2">
+          <img src="../img/cinemaMuseumBanner.jpg" class="img-cinema-musemun" style="margin-top: 30px;">
+  
+          <!-- Left Panel News - Image & Video -->
+          <div class="left-panel-news">
+            <div class="tab">
+              <button class="tablinks active" id="mybutton" onclick="leftPanelBtns(event, 'news')">اخبار</button><button class="tablinks" onclick="leftPanelBtns(event, 'imgVideo')">عکس و فیلم</button>
+            </div>
+            <div id="news" class="tabcontent">
+              <div class="container-fluid">
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/theWorldDancesWithMe.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <a href="../pages/news/theWorldDanceWithMe.html" class="txt-left-panel">
+                      <p class="txt-left-panel">تجربه متفاوت اکران «جهان با من برقص»</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/molaghatBaJadoogar.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">«ملاقات با جادوگر» آماده اکران شد/ درخواست پروانه نمایش</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/theLastShow_zireNazar.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">پایان اکران آنلاین دو فیلم زیرنظر و مهمانخانه ماه‌نو با بیش از دو میلیارد تومان فروش</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/mahtabKeramati.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">مهتاب کرامتی بازیگر «صحنه‌زنی» شد</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/goldenGlobe.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">مراسم «گلدن گلوب ۲۰۲۱» به پایان ماه فوریه امسال موکول شد</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/parvanehSakht.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">آخرین مصوبات شورای پروانه نمایش آثار غیر سینمایی</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/butterflyStroke-khobBadJelf2.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">از رضایت به اکران «شنای پروانه» و «خوب بد جلف ۲» تا افزایش قیمت بلیت سینما</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/cancellationVideo.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">دو فیلم انصرافی به اکران رضایت دادند</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/readyForOnlineRelease.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">فیلم‌های توقیفی اکران آنلاین می‌شوند؟ا</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/headLess.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">حضور «بی‌سر» در بخش بازار جشنواره کن/ رونمایی از پوستر</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/wemenAreAngel.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">«زن‌ها فرشته‌اند ۲» جای انصرافی‌ها از اکران را می‌گیرد؟</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/cinemaMesume.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">موزه سینما امانتدار بخش دیگری از جوایز عباس کیارستمی شد</p>
+                  </div>
+                </div>
+                <div class="row row-news">
+                  <div class="col-sm-2">
+                    <img src="../img/News/amirAghaee.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">مروری بر فیلم‌های امیر آقایی به بهانه اکران فیلم «شنای پروانه»</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div id="imgVideo" class="tabcontent">
+              <div class="container-fluid">
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/ferankeshtain.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویری از نمایش «فرانکنشتاین» در سالن اصلی تئاتر شهر</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/janDar.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویری از اولین اکران مردمی «جان دار» با حضور حامد بهداد و جواد عزتی</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/dokhtareShiraz.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویر از اکران مردمی «خداحافظ دختر شیرازی» با حضور بازیگران</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/arkheh.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویری از مراسم اختتامیه جشنواره «تئاتر آرخه» با حضور چهره‌های هنری</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/ashoftegi.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویری اولین اکران مردمی فیلم «آشفته‌گی» با حضور بهرام رادان</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/mehdiPakdel.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویری از حضور هنرمندان در نمایشگاه عکس مهدی پاکدل</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/lastStory.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویر از اکران انیمیشن «آخرین داستان» با حضور حامد بهداد</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/motreb.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویر از اکران فیلم «مطرب» با حضور بازیگران فیلم </p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/soonami.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویر از اکران مردمی «سونامی» با حضور بازیگران</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/theWorldDanceWithMe.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">گزارش تصویری از اکران «جهان با من برقص» با حضور بازیگران فیلم و جمعی از هنرمندان</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/bahmanCinema.jpg" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel">جدول برنامه سینما بهمن در جشنواره فیلم فجر ۳۸</p>
+                  </div>
+                </div>
+                <div class="row row-imgVideo">
+                  <div class="col-sm-2">
+                    <img src="../img/News/amir.JPG" class="all-img-news">
+                  </div>
+                  <div class="col-sm-10" style="  margin-top: 10px;">
+                    <p class="txt-left-panel"> اکران مردمی فیلم «امیر» به کارگردانی نیما اقلیما در شهر مشهد برگزار شد. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <img src="../img/Gifts/aghaZadehBanner.gif" class="left-panel-banner">
+  
+          <div class="left-panel-sell">
+            <div style="font-family: 'BRoya';font-size: 19px; margin-top: 31px;margin-right: 20px;color: #606369;">
+              <i class="fa fa-calendar" style="padding-left: 5px;font-size: 17px;"></i>جدول فروش فیلم ها در سال 98
+            </div>
+  
+            <div style="font-size: 17px;padding-bottom:5px ;margin: 20px;color: #ff3a4d;border-bottom: 1px solid #bdbdbd;">
+              <span>فیلم</span>
+              <span style="float: left;">فروش (تومان)</span>
+            </div>
+  
+            <div class="txt-panel-sell1">
+              <a class="a-sell-film">مطرب</a>
+              <span style="float:left;font-family: 'BRoya';">38,548,891,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">متری شیش و نیم</a>
+              <span style="float:left;font-family: 'BRoya';">27,720,239,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">تگزاس <span style="font-family: 'BRoya';">2</span></a>
+              <span style="float:left;font-family: 'BRoya';">25,088,112,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">رحمان <span style="font-family: 'BRoya';">1400</span></a>
+              <span style="float:left;font-family: 'BRoya';">22,542,218,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">شبی که ماه کامل شد</a>
+              <span style="float:left;font-family: 'BRoya';">19,012,982,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">سرخپوست</a>
+              <span style="float:left;font-family: 'BRoya';">14,981,321,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">چشم و گوش بسته</a>
+              <span style="float:left;font-family: 'BRoya';">12,837,496,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">چهارانگشت</a>
+              <span style="float:left;font-family: 'BRoya';">10,696,652,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">ما همه با هم هستیم</a>
+              <span style="float:left;font-family: 'BRoya';">10,662,141,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">زیرنظر</a>
+              <span style="float:left;font-family: 'BRoya';">8,422,079,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">جهان با من برقص</a>
+              <span style="float:left;font-family: 'BRoya';">6,754,754,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">سامورایی در برلین</a>
+              <span style="float:left;font-family: 'BRoya';">6,624,878,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">ایکس لارج</a>
+              <span style="float:left;font-family: 'BRoya';">6,320,838,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">ماجرای نیمروز<span style="font-family: 'BRoya';">2</span>: ردخون</a>
+              <span style="float:left;font-family: 'BRoya';">6,234,747,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">زهرمار</a>
+              <span style="float:left;font-family: 'BRoya';">6,164,657,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">منطقه پرواز ممنوع</a>
+              <span style="float:left;font-family: 'BRoya';">5,939,320,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">هزارتو</a>
+              <span style="float:left;font-family: 'BRoya';">5,500,475,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">بنیامین</a>
+              <span style="float:left;font-family: 'BRoya';">5,225,432,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">زندانی ها</a>
+              <span style="float:left;font-family: 'BRoya';">4,693,593,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">ایده اصلی</a>
+              <span style="float:left;font-family: 'BRoya';">4,125,861,000</span>
+            </div>
+            <div class="txt-panel-sell">
+              <a class="a-sell-film">جان دار</a>
+              <span style="float:left;font-family: 'BRoya';">3,715,843,000</span>
+            </div>
+            <div class="txt-panel-sell2">
+              <a class="a-sell-film">قصر شیرین</a>
+              <span style="float:left;font-family: 'BRoya';">3,416,629,000</span>
+            </div>
+          </div>
+  
+          <div class="left-panel-total">
+            <span>جمع کل :</span>
+            <span style="float: left;margin-left: 20px;">۲۹۶٬۴۶۱٬۱۰۹٬۰۰۰</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- Footer -->
+    <div class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="../img/cinematicket-footer.svg" id="img-logo-footer">
+        </div>
+        <div class="col-sm-6" style="left:15%;">
+          <p class="txt-left-footer">نرم افزارهای موبایل:</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footernav">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-9">
+            <a href="" class="link-footer">درباره</a>
+            <a href="" class="link-footer">فیلم‌ها</a>
+            <a href="" class="link-footer">سینماها</a>
+            <a href="" class="link-footer">باشگاه مشتریان</a>
+            <a href="" class="link-footer">آرشیوفیلم‌ها</a>
+            <a href="" class="link-footer">جدول فروش</a>
+            <a href="" class="link-footer">سوالات متداول</a>
+            <a href="" class="link-footer">شرکت های پخش</a>
+            <a href="" class="link-footer">تبلیغات</a>
+            <a href="" class="link-footer">قوانین و مقررات</a>
+            <a href="" class="link-footer">تماس با ما</a>
+          </div>
+          <div class="col-sm-3" style="left: 7%;">
+            <img src="../img/googleplay.svg" class="img-googleplay">
+          </div>
+        </div>
+      </div>
+  
+      <div class="best-cinema" style="margin-top: 5px;">سینماهای محبوب</div>
+      <div style="height: 150px;margin-top: 15px;">
+        <span class="btn-cinema-footer" style="margin-right: 45px;">سینما کوروش</span>
+        <span class="btn-cinema-footer">سینما آزادی</span>
+        <span class="btn-cinema-footer">پردیس ایران مال</span>
+        <span class="btn-cinema-footer">سینما مگامال</span>
+        <span class="btn-cinema-footer">پردیس سینمایی باغ کتاب</span>
+        <span class="btn-cinema-footer">پردیس سینمایی هویزه مشهد</span>
+        <span class="btn-cinema-footer">سینما ساویز کرج</span>
+        <span class="btn-cinema-footer">پردیس سینمایی چارسو</span>
+        <span class="btn-cinema-footer">پردیس سینمایی ملت</span>
+        <span class="btn-cinema-footer">پردیس سینمایی اطلس مشهد</span>
+        <span class="btn-cinema-footer" style="margin-right: 35px;">پردیس سینمایی زندگی</span>
+        <span class="btn-cinema-footer">سینما آستارا تهران</span>
+        <span class="btn-cinema-footer"> پردیس سینمایی ساحل اصفهان</span>
+        <span class="btn-cinema-footer">هنر شهر آفتاب شیراز</span>
+        <span class="btn-cinema-footer">پردیس ویلاژ توریست مشهد</span>
+        <span class="btn-cinema-footer">سینما مانادنا تهران</span>
+        <span class="btn-cinema-footer">سینما فرهنگ</span>
+        <span class="btn-cinema-footer">پردیس سینمایی چهارباغ</span>
+        <span class="btn-cinema-footer">سینما پرشین مهر شهر</span>
+        <span class="btn-cinema-footer">پردیس سینمایی ارگ</span>
+        <span class="btn-cinema-footer" style="margin-right: 35px;">سیتی سنتر اصفهان</span>
+      </div>
+  
+      <hr class="hr-style">
+  
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-8 site-law">
+              <p>تمامي کالاها و خدمات اين فروشگاه، حسب مورد داراي مجوزهاي لازم از مراجع مربوطه مي باشند و فعاليت هاي اين سايت تابع قوانين و مقررات جمهوري اسلامي ايران است.</p>
+              <p> * کليه‌ي حقوق نشر، عرضه، اجرا و بهره‌برداري از اطلاعات موجود در سايت و اپليکيشن «سينماتيکت» نزد منصه محفوظ است و استفاده از آن غيرقانوني است.</p>
+              <p>تلفن ۹ صبح تا ۱۰ شب ۷۵۳۹۱۰۰۰ -۰۲۱ | ايميل : info@cinematicket.org</p>
+            </div>
+  
+            <div class="col-sm-2" style="right: 4%;">
+              <img src="../img/logo.aspx.png" class="img-site-law">
+              <img src="../img/logo.aspx2.png" class="img-site-law">
+              <img src="../img/logo.aspx3.png" class="img-site-law">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-sm-6" style="margin-top: 30px;margin-bottom: 20px;">
+              <img src="../img/aparatLogo.png" class="all-app-footer" style="margin-top: -2px;">
+              <i class="fa fa-paper-plane all-app-footer" id="telegram-footer"></i>
+              <i class="fa fa-twitter all-app-footer" id="tweitter-footer"></i>
+              <i class="fa fa-instagram all-app-footer" id="instagram-footer"></i>
+              <i class="fa fa-facebook-f all-app-footer" id="facebook-footer"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 </body>
 
 </html>
