@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>سینما تیکت - جدول فروش</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+
+  <script src="../js/jquery-2.2.4.js"></script>
+
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/w3.css"/>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="../css/Font-Awesome-fa-4/css/font-awesome.css">
+</head>
+<body>
+  <a id="button" style="text-decoration: none;"></a>
+
+  <!-- First Navbar -->
+  <div class="firstnav">
+    <a href="../pages/home.html" style="margin-right: 25px;">صفحه اول</a>
+    <a href="../pages/groupSell.html">خرید گروهی</a>
+    <a href="../pages/discountThetear.html">سینما تخفیف</a>
+    <a href="#newss">اخبار</a>
+    <a class="active" href="#market">بازارچه</a>
+    <a href="../pages/feature.html">برنامه آینده</a>
+    <a href="#download">دانلود</a>
+    <a href="../pages/contactUs.html">تماس با ما</a>
+
+    <span style="text-align: left">
+      <a class="firstnav-app" style="margin-left: 25px;">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="firstnav-app">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a class="firstnav-app">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a class="firstnav-app">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a class="firstnav-app">
+        <i class="fa fa-paper-plane" style="font-size: 16px;"></i>
+      </a>
+    </span>
+    <a id="date">
+      <script src="../js/persionCalender.js"></script>
+    </a>
+  </div>
+
+
+  <!-- Second Navbar -->
+  <div class="secnav" id="fixed-nav">
+    <a href="../pages/home.html"><img id="img-sitelogo" src="../img/cinemaTicketLogo.svg"></a>
+    <a href="../pages/films.html">فیلم‌ها</a>
+    <a href="../pages/artAndExperience.html">هنر و تجربه</a>
+    <a href="../pages/comedyTheater.html">تئاتر کمدی</a>
+    <a href="../pages/childTheater.html">تئاتر کودک</a>
+    <a href="../pages/fun.html">تفریحی</a>
+    <a href="sellTable.html">جدول فروش</a>
+    <a href="../pages/trackOrder.html" style="color: #343542">
+      <span id="btn-track-order">پیگیری خرید</span>
+    </a>
+    <a style="background-color: #2d2d39;margin-top: 0;" id="secnavbar-searchbox">
+      <i class="fa fa-search" style="padding: 7px 12px;font-size: medium;"></i>
+      <input type="text" name="search" class="input-txt-search" placeholder="جستجو...">
+    </a>
+
+    <a href=""><span class="register">عضویت</span></a>
+    <a id="pipeline">|</a>
+    <a href=""><span class="login">ورود</span></a>
+
+    <a>
+      <span class="all-btn btn-films">فیلم‌ها<i class="fa fa-video-camera" style="padding-right: 5px;font-size: medium;"></i></span>
+    </a>
+    <a>
+      <span class="all-btn btn-choice-cinema">انتخاب سینما<i class="fa fa-map-marker" style="padding-right: 5px;font-size: medium;"></i></span>
+    </a>
+  </div>
+
+
+  <!-- Main Content -->
+  <div class="container-fluid" style="background-color: #f2f3f5;">
+    <div class="row">
+      <div class="col-sm-8 box-sell" style="margin-top: 30px;">
+        <p class="txt-right-sellpanel">جدول فروش هفتگی</p>
+        <p class="txt-under-header-groupsell" style="margin-top: 5px;">آمار فروش چهارشنبه ها بروز میگردد. </p>
+
+        <table class="tbl-sell">
+          <tr class="firstrow">
+            <td class="tbl-tittle">رتبه</td>
+            <td>فیلم</td>
+            <td>هفته</td>
+            <td>تعداد سینما</td>
+            <td>فروش هفتگی (تومان)</td>
+            <td>فروش کل تا هفته گذشته</td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="col-sm-4">
+        <div class="left-panel-sell-art">
+          <div style="font-size: 19px; margin-top: 31px;margin-right: 20px;color: #606369;">
+            <i class="fa fa-calendar" style="padding-left: 5px;font-size: 17px;"></i>جدول فروش فیلم‌های هنر و تجربه
+          </div>
+
+          <div style="font-size: 17px;padding-bottom:5px ;margin: 20px;color: #ff3a4d;border-bottom: 1px solid #bdbdbd;">
+            <span>فیلم</span>
+            <span style="float: left;">فروش (تومان)</span>
+          </div>
+
+          <div class="txt-panel-sell1">
+            <a class="a-sell-film">هجوم</a>
+            <span style="float:left;font-family: 'BRoya';">۲۸۲,۸۸۶,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">در جستجوی فریده</a>
+            <span style="float:left;font-family: 'BRoya';">۲۷۷,۶۸۵,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">خواب تلخ</a>
+            <span style="float:left;font-family: 'BRoya';">۲۵۱,۵۲۳,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">چهارشنبه</a>
+            <span style="float:left;font-family: 'BRoya';">۲۱۸,۴۶۳,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">رضا</a>
+            <span style="float:left;font-family: 'BRoya';">۱۶۶,۹۹۹,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">سينمانيمكت</a>
+            <span style="float:left;font-family: 'BRoya';">۱۳۲,۴۱۶,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">مفت آباد</a>
+            <span style="float:left;font-family: 'BRoya';">۱۱۶,۵۰۳,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">پريناز</a>
+            <span style="float:left;font-family: 'BRoya';">۱۰۲,۲۲۹,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">تمارض</a>
+            <span style="float:left;font-family: 'BRoya';">۸۷,۷۴۶,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">گلدن تايم</a>
+            <span style="float:left;font-family: 'BRoya';">۸۵,۱۸۵,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">يك قناري يك كاتغ</a>
+            <span style="float:left;font-family: 'BRoya';">۷۶,۸۱۴,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">زغال</a>
+            <span style="float:left;font-family: 'BRoya';">۷۵,۱۵۸,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">نيم رخ ها</a>
+            <span style="float:left;font-family: 'BRoya';">۷۲,۵۱۶,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">پاپ</a>
+            <span style="float:left;font-family: 'BRoya';">۶۹,۲۴۳,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">بزم رزم (مستند)</a>
+            <span style="float:left;font-family: 'BRoya';">۶۷,۸۷۶,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">چاووش، از درآمد تا فرود (مستند)</a>
+            <span style="float:left;font-family: 'BRoya';">۶۲,۱۳۲,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">میدان جوانان سابق (مستند)</a>
+            <span style="float:left;font-family: 'BRoya';">۴۴,۳۹۸,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">اسرار دریاچه (مستند)</a>
+            <span style="float:left;font-family: 'BRoya';">۴۳,۱۵۷,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">كوه</a>
+            <span style="float:left;font-family: 'BRoya';">۴۰,۲۳۵,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">كارت پرواز</a>
+            <span style="float:left;font-family: 'BRoya';">۳۹,۲۹۲,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">خانه (اِئو)</a>
+            <span style="float:left;font-family: 'BRoya';">۳۴,۱۳۵,۰۰۰</span>
+          </div>
+          <div class="txt-panel-sell2">
+            <a class="a-sell-film">پات</a>
+            <span style="float:left;font-family: 'BRoya';">۳۱,۰۸۰,۰۰۰</span>
+          </div>
+        </div>
+
+        <img src="../img/Gifts/delBanner.gif" class="left-panel-banner">
+
+        <div class="left-panel-sell">
+          <div style="font-family: 'BRoya';font-size: 19px; margin-top: 31px;margin-right: 20px;color: #606369;">
+            <i class="fa fa-calendar" style="padding-left: 5px;font-size: 17px;"></i>جدول فروش فیلم ها در سال 98
+          </div>
+
+          <div style="font-size: 17px;padding-bottom:5px ;margin: 20px;color: #ff3a4d;border-bottom: 1px solid #bdbdbd;">
+            <span>فیلم</span>
+            <span style="float: left;">فروش (تومان)</span>
+          </div>
+
+          <div class="txt-panel-sell1">
+            <a class="a-sell-film">مطرب</a>
+            <span style="float:left;font-family: 'BRoya';">38,548,891,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">متری شیش و نیم</a>
+            <span style="float:left;font-family: 'BRoya';">27,720,239,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">تگزاس <span style="font-family: 'BRoya';">2</span></a>
+            <span style="float:left;font-family: 'BRoya';">25,088,112,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">رحمان <span style="font-family: 'BRoya';">1400</span></a>
+            <span style="float:left;font-family: 'BRoya';">22,542,218,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">شبی که ماه کامل شد</a>
+            <span style="float:left;font-family: 'BRoya';">19,012,982,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">سرخپوست</a>
+            <span style="float:left;font-family: 'BRoya';">14,981,321,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">چشم و گوش بسته</a>
+            <span style="float:left;font-family: 'BRoya';">12,837,496,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">چهارانگشت</a>
+            <span style="float:left;font-family: 'BRoya';">10,696,652,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">ما همه با هم هستیم</a>
+            <span style="float:left;font-family: 'BRoya';">10,662,141,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">زیرنظر</a>
+            <span style="float:left;font-family: 'BRoya';">8,422,079,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">جهان با من برقص</a>
+            <span style="float:left;font-family: 'BRoya';">6,754,754,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">سامورایی در برلین</a>
+            <span style="float:left;font-family: 'BRoya';">6,624,878,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">ایکس لارج</a>
+            <span style="float:left;font-family: 'BRoya';">6,320,838,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">ماجرای نیمروز<span style="font-family: 'BRoya';">2</span>: ردخون</a>
+            <span style="float:left;font-family: 'BRoya';">6,234,747,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">زهرمار</a>
+            <span style="float:left;font-family: 'BRoya';">6,164,657,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">منطقه پرواز ممنوع</a>
+            <span style="float:left;font-family: 'BRoya';">5,939,320,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">هزارتو</a>
+            <span style="float:left;font-family: 'BRoya';">5,500,475,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">بنیامین</a>
+            <span style="float:left;font-family: 'BRoya';">5,225,432,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">زندانی ها</a>
+            <span style="float:left;font-family: 'BRoya';">4,693,593,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">ایده اصلی</a>
+            <span style="float:left;font-family: 'BRoya';">4,125,861,000</span>
+          </div>
+          <div class="txt-panel-sell">
+            <a class="a-sell-film">جان دار</a>
+            <span style="float:left;font-family: 'BRoya';">3,715,843,000</span>
+          </div>
+          <div class="txt-panel-sell2">
+            <a class="a-sell-film">قصر شیرین</a>
+            <span style="float:left;font-family: 'BRoya';">3,416,629,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="../img/cinematicket-footer.svg" id="img-logo-footer">
+        </div>
+        <div class="col-sm-6" style="left:15%;">
+          <p class="txt-left-footer">نرم افزارهای موبایل:</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footernav">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-9">
+            <a href="" class="link-footer">درباره</a>
+            <a href="" class="link-footer">فیلم‌ها</a>
+            <a href="" class="link-footer">سینماها</a>
+            <a href="" class="link-footer">باشگاه مشتریان</a>
+            <a href="" class="link-footer">آرشیوفیلم‌ها</a>
+            <a href="" class="link-footer">جدول فروش</a>
+            <a href="" class="link-footer">سوالات متداول</a>
+            <a href="" class="link-footer">شرکت های پخش</a>
+            <a href="" class="link-footer">تبلیغات</a>
+            <a href="" class="link-footer">قوانین و مقررات</a>
+            <a href="" class="link-footer">تماس با ما</a>
+          </div>
+          <div class="col-sm-3" style="left: 7%;">
+            <img src="../img/googleplay.svg" class="img-googleplay">
+          </div>
+        </div>
+      </div>
+
+      <div class="best-cinema" style="margin-top: 5px;">سینماهای محبوب</div>
+      <div style="height: 150px;margin-top: 15px;">
+        <span class="btn-cinema-footer" style="margin-right: 45px;">سینما کوروش</span>
+        <span class="btn-cinema-footer">سینما آزادی</span>
+        <span class="btn-cinema-footer">پردیس ایران مال</span>
+        <span class="btn-cinema-footer">سینما مگامال</span>
+        <span class="btn-cinema-footer">پردیس سینمایی باغ کتاب</span>
+        <span class="btn-cinema-footer">پردیس سینمایی هویزه مشهد</span>
+        <span class="btn-cinema-footer">سینما ساویز کرج</span>
+        <span class="btn-cinema-footer">پردیس سینمایی چارسو</span>
+        <span class="btn-cinema-footer">پردیس سینمایی ملت</span>
+        <span class="btn-cinema-footer">پردیس سینمایی اطلس مشهد</span>
+        <span class="btn-cinema-footer" style="margin-right: 35px;">پردیس سینمایی زندگی</span>
+        <span class="btn-cinema-footer">سینما آستارا تهران</span>
+        <span class="btn-cinema-footer"> پردیس سینمایی ساحل اصفهان</span>
+        <span class="btn-cinema-footer">هنر شهر آفتاب شیراز</span>
+        <span class="btn-cinema-footer">پردیس ویلاژ توریست مشهد</span>
+        <span class="btn-cinema-footer">سینما مانادنا تهران</span>
+        <span class="btn-cinema-footer">سینما فرهنگ</span>
+        <span class="btn-cinema-footer">پردیس سینمایی چهارباغ</span>
+        <span class="btn-cinema-footer">سینما پرشین مهر شهر</span>
+        <span class="btn-cinema-footer">پردیس سینمایی ارگ</span>
+        <span class="btn-cinema-footer" style="margin-right: 35px;">سیتی سنتر اصفهان</span>
+      </div>
+
+      <hr class="hr-style">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 site-law">
+            <p>تمامي کالاها و خدمات اين فروشگاه، حسب مورد داراي مجوزهاي لازم از مراجع مربوطه مي باشند و فعاليت هاي اين سايت تابع قوانين و مقررات جمهوري اسلامي ايران است.</p>
+            <p> * کليه‌ي حقوق نشر، عرضه، اجرا و بهره‌برداري از اطلاعات موجود در سايت و اپليکيشن «سينماتيکت» نزد منصه محفوظ است و استفاده از آن غيرقانوني است.</p>
+            <p>تلفن ۹ صبح تا ۱۰ شب ۷۵۳۹۱۰۰۰ -۰۲۱ | ايميل : info@cinematicket.org</p>
+          </div>
+
+          <div class="col-sm-2" style="right: 4%;">
+            <img src="../img/logo.aspx.png" class="img-site-law">
+            <img src="../img/logo.aspx2.png" class="img-site-law">
+            <img src="../img/logo.aspx3.png" class="img-site-law">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6" style="margin-top: 30px;margin-bottom: 20px;">
+            <img src="../img/aparatLogo.png" class="all-app-footer" style="margin-top: -2px;">
+            <i class="fa fa-paper-plane all-app-footer" id="telegram-footer"></i>
+            <i class="fa fa-twitter all-app-footer" id="tweitter-footer"></i>
+            <i class="fa fa-instagram all-app-footer" id="instagram-footer"></i>
+            <i class="fa fa-facebook-f all-app-footer" id="facebook-footer"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<script>
+  var btn = $('#button');
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, '300');
+  });
+</script>
+
+<script>
+  function leftPanelBtns(evt, btnsName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(btnsName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById("mybutton").click();
+  });
+</script>
+
+<script>
+  $(".dropdown-choice-cinema").each(function() {
+    var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+    var template =  '<div class="' + classes + '">';
+    template += '<span class="dropdown-choice-cinema-trigger">' + $(this).attr("placeholder") + '</span>';
+    template += '<div class="custom-options-tittle">';
+    $(this).find("option").each(function() {
+      template += '<span class="custom-option-cinema ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+    });
+    template += '</div></div>';
+
+    $(this).wrap('<div class="dropdown-choice-cinema-wrapper"></div>');
+    $(this).hide();
+    $(this).after(template);
+  });
+  $(".custom-option-cinema:first-of-type").hover(function() {
+    $(this).parents(".custom-options-tittle").addClass("option-hover");
+  }, function() {
+    $(this).parents(".custom-options-tittle").removeClass("option-hover");
+  });
+  $(".dropdown-choice-cinema-trigger").on("click", function() {
+    $('html').one('click',function() {
+      $(".dropdown-choice-cinema").removeClass("opened");
+    });
+    $(this).parents(".dropdown-choice-cinema").toggleClass("opened");
+    event.stopPropagation();
+  });
+  $(".custom-option-cinema").on("click", function() {
+    $(this).parents(".dropdown-choice-cinema-wrapper").find("select").val($(this).data("value"));
+    $(this).parents(".custom-options-tittle").find(".custom-option-cinema").removeClass("selection");
+    $(this).addClass("selection");
+    $(this).parents(".dropdown-choice-cinema").removeClass("opened");
+    $(this).parents(".dropdown-choice-cinema").find(".dropdown-choice-cinema-trigger").text($(this).text());
+  });
+</script>
